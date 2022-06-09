@@ -1,0 +1,11 @@
+.search__input {
+    font-family: "Source Sans Pro", "Helvetica";
+    margin: auto;
+    color: #808080;
+    border: 3px solid #0B3D91;
+    border-radius: 100px;
+    width: 20%;
+    height: 30px;
+    font-size: 15px;
+    padding: 0 10px;
+}

@@ -1,0 +1,11 @@
+.nasa-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nasa-app__image {
+    width: 30%;
+    margin: auto;
+}
+
