@@ -1,14 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../styles/search.css";
+import PropTypes from "prop-types";
 import getImages from "../requests/getImages";
 
-function Search() {
+function Search({ setSearchResults }) {
   const [value, setValue] = useState();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    getImages(value);
+    setSearchResults(getImages(value));
   };
 
   return (
@@ -28,3 +29,11 @@ function Search() {
 }
 
 export default Search;
+
+Search.defaultProps = {
+  setSearchResults: () => {},
+};
+
+Search.propTypes = {
+  setSearchResults: PropTypes.func,
+};
