@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles/SearchResults.css";
+import PropTypes from "prop-types";
 
-function SearchResults() {
+function SearchResults({ results }) {
+  if (!results.length) {
+    return <p>No results!</p>;
+  }
   return (
     <>
       <p>Search results:</p>
@@ -16,3 +20,11 @@ function SearchResults() {
 }
 
 export default SearchResults;
+
+SearchResults.defaultProps = {
+  results: [],
+};
+
+SearchResults.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.string),
+};
