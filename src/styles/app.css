@@ -8,3 +8,9 @@
     width: 30%;
     margin: auto;
 }
+
+@media screen and (max-width: 400px) {
+    .nasa-app__image{
+        margin-left: 130px;
+    }
+}
