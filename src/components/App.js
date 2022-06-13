@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import "../styles/app.css";
 import Search from "./Search";
 import SearchResults from "./SearchResults";
+import ScrollTopButton from "./SrollTopButton";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className="nasa-app">
@@ -16,6 +18,7 @@ function App() {
       />
       <Search setSearchResults={setSearchResults} />
       <SearchResults results={searchResults} />
+      <ScrollTopButton isVisible={isVisible} setIsVisible={setIsVisible} />
     </div>
   );
 }

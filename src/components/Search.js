@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "../styles/search.css";
 import PropTypes from "prop-types";
+import { IoIosRocket } from "react-icons/io";
 import getImages from "../requests/getImages";
 
 function Search({ setSearchResults }) {
@@ -17,11 +18,16 @@ function Search({ setSearchResults }) {
       <form className="search__form" onSubmit={handleSubmit}>
         <input
           type="text"
+          placeholder="Search..."
           className="search__input"
           onChange={(event) => setValue(event.target.value)}
         />
-        <button className="search__button" type="submit">
-          Search
+        <button
+          data-testid="search__button"
+          className="search__button"
+          type="submit"
+        >
+          <IoIosRocket data-testid="search__icon" className="search__icon" />
         </button>
       </form>
     </div>

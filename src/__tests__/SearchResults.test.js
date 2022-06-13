@@ -9,7 +9,9 @@ describe("SearchResults", () => {
   });
 
   it("renders visible image", () => {
-    const { getByTestId } = render(<SearchResults />);
+    const results = [""];
+
+    const { getByTestId } = render(<SearchResults results={results} />);
     expect(getByTestId("search-results__image")).toBeVisible();
   });
 });

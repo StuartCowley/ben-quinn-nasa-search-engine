@@ -8,9 +8,18 @@ describe("Search", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("returns button with text", () => {
-    const { getByText } = render(<Search />);
+  it("returns input with placeholder text", () => {
+    const { getByPlaceholderText } = render(<Search />);
 
-    expect(getByText(/search/i)).toHaveAttribute("type", "submit");
+    expect(getByPlaceholderText(/search/i)).toBeVisible();
+  });
+
+  it("returns button with icon", () => {
+    const { getByTestId } = render(<Search />);
+
+    const icon = getByTestId("search__icon");
+    const button = getByTestId("search__button");
+
+    expect(button).toContainElement(icon);
   });
 });
