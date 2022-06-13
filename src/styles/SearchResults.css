@@ -7,14 +7,15 @@ p {
 .search-results {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
     gap: 30px 30px;
 }
 
 .search-results__image {
-    height: 30%;
-    width: 30%;
+    width: 20%;
     border: 3px solid #FC3D21;
+    object-fit: cover;
+    border-radius: 15px;
 }
