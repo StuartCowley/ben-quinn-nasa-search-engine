@@ -8,3 +8,9 @@
     font-size: 1em;
     cursor: pointer;
 }
+
+@media screen and (max-width: 400px) {
+    .scroll-top-button {
+        bottom: 20px;
+    }
+}

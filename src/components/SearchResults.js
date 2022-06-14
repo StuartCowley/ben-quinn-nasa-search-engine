@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 function SearchResults({ results }) {
   if (!results.length) {
-    return <p>Please enter a valid search.</p>;
+    return <p>Please enter a valid search item!</p>;
   }
   return (
     <>

@@ -7,16 +7,23 @@ p {
 .search-results {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 50px;
     margin-right: 50px;
-    gap: 30px 30px;
+    gap: 15px 15px;
 }
 
 .search-results__image {
     width: 20%;
     border: 3px solid #FC3D21;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
+@media screen and (max-width: 400px) {
+    .search-results__image {
+        width: 40%;
+        border-radius: 2px;
+        justify-content: center;
+    }
+}

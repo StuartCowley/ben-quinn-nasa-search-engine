@@ -3,7 +3,7 @@
 exports[`SearchResults renders correctly 1`] = `
 <DocumentFragment>
   <p>
-    Please enter a valid search.
+    Please enter a valid search item!
   </p>
 </DocumentFragment>
 `;

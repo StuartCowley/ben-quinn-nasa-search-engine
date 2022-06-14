@@ -5,12 +5,15 @@
 }
 
 .nasa-app__image {
-    width: 30%;
+    width: 30rem;
+    height: 15rem;
     margin: auto;
 }
 
 @media screen and (max-width: 400px) {
-    .nasa-app__image{
-        margin-left: 130px;
+    .nasa-app__image {
+        width: 17.5rem;
+        height: 7.5rem;
+
     }
 }

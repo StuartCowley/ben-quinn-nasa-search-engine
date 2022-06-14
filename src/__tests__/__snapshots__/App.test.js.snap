@@ -48,7 +48,7 @@ exports[`App renders correctly 1`] = `
       </form>
     </div>
     <p>
-      Please enter a valid search.
+      Please enter a valid search item!
     </p>
     <button
       class="scroll-top-button"
