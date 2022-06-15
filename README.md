@@ -2,7 +2,7 @@
 
 A NASA search engine that takes user input and returns images from API.
 
-Hosted [here](https://benjQuinn.github.io/React-Technical-Test) on GitHub Pages.
+Hosted [here](https://benjQuinn.github.io/nasa-search-engine) on GitHub Pages.
 
 ## The Brief
 
