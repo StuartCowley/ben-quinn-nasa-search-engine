@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollTopButton renders correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="scroll-top-button"
+    data-testid="scroll-top-button"
+    style="display: none;"
+    type="submit"
+  >
+    Scroll to top
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,30 @@
+p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 15px 15px;
+}
+
+.search-results__image {
+    width: 20%;
+    border: 3px solid #FC3D21;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .search-results__image {
+        width: 45%;
+        border: 0;
+        justify-content: center;
+        background-size: cover;
+    }
+}

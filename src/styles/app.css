@@ -1,0 +1,19 @@
+.nasa-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nasa-app__image {
+    width: 30rem;
+    height: 15rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .nasa-app__image {
+        width: 17.5rem;
+        height: 7.5rem;
+
+    }
+}
